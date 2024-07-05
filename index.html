@@ -221,7 +221,100 @@
         </div>
       </div>
     </section>
-
+    <section
+      data-bs-version="5.1"
+      class="slider4 mbr-embla cid-uhEZcUAZ2F"
+      id="slider04-d"
+    >
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-12 content-head">
+            <h3
+              class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"
+            >
+              <strong>Him provoking techtokers&nbsp;</strong>
+            </h3>
+            <h5
+              class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7"
+            >
+              (screenshot from TTB)
+            </h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="embla position-relative"
+              data-skip-snaps="true"
+              data-align="center"
+              data-contain-scroll="trimSnaps"
+              data-loop="true"
+              data-auto-play-interval="5"
+              data-draggable="true"
+            >
+              <div class="embla__viewport">
+                <div class="embla__container">
+                  <div
+                    class="embla__slide slider-image item active"
+                    style="margin-left: 5rem; margin-right: 5rem"
+                  >
+                    <div class="slide-content">
+                      <div class="item-img">
+                        <div class="item-wrapper">
+                          <img
+                            src="assets/images/5783009521323589038-121-591x1280.webp"
+                            alt="Mobirise Website Builder"
+                            title=""
+                            data-slide-to="0"
+                            data-bs-slide-to="0"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="embla__slide slider-image item"
+                    style="margin-left: 5rem; margin-right: 5rem"
+                  >
+                    <div class="slide-content">
+                      <div class="item-img">
+                        <div class="item-wrapper">
+                          <img
+                            src="assets/images/5783009521323589039-121-591x1280.webp"
+                            alt="Mobirise Website Builder"
+                            title=""
+                            data-slide-to="1"
+                            data-bs-slide-to="1"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="embla__button embla__button--prev">
+                <span
+                  class="mobi-mbri mobi-mbri-arrow-prev"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only visually-hidden visually-hidden"
+                  >Previous</span
+                >
+              </button>
+              <button class="embla__button embla__button--next">
+                <span
+                  class="mobi-mbri mobi-mbri-arrow-next"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only visually-hidden visually-hidden"
+                  >Next</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section
       data-bs-version="5.1"
       class="start article2 cid-uhzTV9XRCO"
@@ -394,7 +487,9 @@
           >
             <div class="item-wrapper">
               <div class="title mb-3">
-                <h3 class="mbr-section-title mbr-fonts-style mb-0 display-1 fw-bold text-center">
+                <h3
+                  class="mbr-section-title mbr-fonts-style mb-0 display-1 fw-bold text-center"
+                >
                   &nbsp; Between $US 616,496 and $US 923,290.<br />
                 </h3>
               </div>
@@ -558,19 +653,16 @@
     <input name="animation" type="hidden" />
   </body>
   <script>
-			fetch("https://pinguapi.thetechboy.net/v1/tiktok/luciano_black_")
-				.then(function (response) {
-					response.json().then((jsonData) => {
-						document.getElementById("followers").textContent =
-							jsonData.followers;
-						document.getElementById("likes").textContent =
-							jsonData.likes;
-						document.getElementById("videos").textContent =
-							jsonData.vids;
-					});
-				})
-				.catch(function (error) {
-					console.log(error);
-				});
+    fetch("https://pinguapi.thetechboy.net/v1/tiktok/luciano_black_")
+      .then(function (response) {
+        response.json().then((jsonData) => {
+          document.getElementById("followers").textContent = jsonData.followers;
+          document.getElementById("likes").textContent = jsonData.likes;
+          document.getElementById("videos").textContent = jsonData.vids;
+        });
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   </script>
 </html>

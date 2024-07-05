@@ -328,7 +328,7 @@
                 <h5
                   class="mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number display-1"
                 >
-                  <strong>Null</strong>
+                  <strong id="followers">Null</strong>
                 </h5>
                 <h4 class="card-title mbr-fonts-style display-5">
                   <strong>Followers</strong>
@@ -341,9 +341,9 @@
             <div class="item-wrapper">
               <div class="item-content">
                 <h5
-                  class="mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number display-1"
+                  class="mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number display-2"
                 >
-                  <strong>Null</strong>
+                  <strong id="likes">Null</strong>
                 </h5>
                 <h4 class="card-title mbr-fonts-style display-5">
                   <strong>Likes</strong>
@@ -358,7 +358,7 @@
                 <h5
                   class="mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number display-1"
                 >
-                  <p><strong>Null</strong></p>
+                  <p><strong id="videos">Null</strong></p>
                 </h5>
                 <h4 class="card-title mbr-fonts-style display-5">
                   <strong>Videos</strong>
@@ -394,7 +394,7 @@
           >
             <div class="item-wrapper">
               <div class="title mb-3">
-                <h3 class="count mbr-fonts-style display-1">
+                <h3 class="mbr-section-title mbr-fonts-style mb-0 display-1 fw-bold text-center">
                   &nbsp; Between $US 616,496 and $US 923,290.<br />
                 </h3>
               </div>
@@ -528,40 +528,6 @@
         </div>
       </div>
     </section>
-    <section
-      class="display-7"
-      style="
-        padding: 0;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-content: center;
-        display: flex;
-        position: relative;
-        height: 4rem;
-      "
-    >
-      <a
-        href="https://mobiri.se/2465218"
-        style="
-          flex: 1 1;
-          height: 4rem;
-          position: absolute;
-          width: 100%;
-          z-index: 1;
-        "
-        ><img
-          alt=""
-          style="height: 4rem"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-      /></a>
-      <p style="margin: 0; text-align: center" class="display-7">&#8204;</p>
-      <a
-        style="z-index: 1"
-        href="https://mobirise.com/builder/ai-website-generator.html"
-        >AI Website Generator</a
-      >
-    </section>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>
     <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>
@@ -591,4 +557,20 @@
     />
     <input name="animation" type="hidden" />
   </body>
+  <script>
+			fetch("https://pinguapi.thetechboy.net/v1/tiktok/luciano_black_")
+				.then(function (response) {
+					response.json().then((jsonData) => {
+						document.getElementById("followers").textContent =
+							jsonData.followers;
+						document.getElementById("likes").textContent =
+							jsonData.likes;
+						document.getElementById("videos").textContent =
+							jsonData.vids;
+					});
+				})
+				.catch(function (error) {
+					console.log(error);
+				});
+  </script>
 </html>
